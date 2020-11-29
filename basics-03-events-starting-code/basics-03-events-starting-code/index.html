@@ -24,7 +24,10 @@
       <button v-on:click="reduce(15)">Substract 15</button>
       <p>Result: {{ counter }}</p>
 
-      <input type="text" v-on:input="setName($event, 'Hossain')"> 
+      <input type="text"
+       v-on:input="setName($event, 'Hossain')"
+       v-on:keyup.enter="confirmInput"> 
+       
       <p>Your Name: {{name}} </p>
 
       <form v-on:submit.prevent="submitForm">
