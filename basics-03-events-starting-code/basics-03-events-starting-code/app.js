@@ -8,7 +8,7 @@ const app = Vue.createApp({
   
   methods: {
 
-    setName(event, lastName) {
+    setName(lastName) {
       this.name = event.target.value + ' ' + lastName;
     },
 
