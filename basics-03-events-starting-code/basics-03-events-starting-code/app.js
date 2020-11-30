@@ -1,7 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
-      counter: 0,
+      counter: 10,
       name: '',
       confirmedName: ''
     };
@@ -24,6 +24,7 @@ const app = Vue.createApp({
     add(num) {
        this.counter = this.counter + num;
     },
+
     reduce(num) {
        this.counter = this.counter - num;
     }
