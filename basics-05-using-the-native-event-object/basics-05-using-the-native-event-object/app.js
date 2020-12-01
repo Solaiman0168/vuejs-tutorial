@@ -5,8 +5,18 @@ const app = Vue.createApp({
       name: ''
     };
   },
+  computed: {
+    fullname() {
+      console.log('Running again.....');
+      if (this.name === '') {
+        return this.name;
+      }
+      return this.name + ' ' + 'Hossain';
+    }
+  },
   methods: {
     outputFullname() {
+      console.log('Running again.....');
       if (this.name === '') {
         return this.name;
       }
